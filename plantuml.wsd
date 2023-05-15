@@ -24,4 +24,28 @@ class HouseBlend implements Beverage {
     +void prepare()
 }
 
+class BaseBevarageDecorator implements Beverage {
+    -Beverage wrapee
+    +BaseBevarageDecorator(Beverage wrapee)
+    +void prepare()
+}
+
+BaseBevarageDecorator --o Beverage
+
+class MilkDecorator extends BaseBevarageDecorator {
+    ...
+}
+
+class SoyDecorator extends BaseBevarageDecorator {
+    ...
+}
+
+class MochaDecorator extends BaseBevarageDecorator {
+    ...
+}
+
+class WhipDecorator extends BaseBevarageDecorator {
+    ...
+}
+
 @enduml
