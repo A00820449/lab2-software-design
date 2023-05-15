@@ -19,7 +19,7 @@ public class App {
         else if (option.equalsIgnoreCase("houseblend")) {
             b = new HouseBlend();
         }
-        else if (option.equalsIgnoreCase("darkroast")) {
+        else if (option.equalsIgnoreCase("espresso")) {
             b = new Espresso();
         }
         else if (option.equalsIgnoreCase("decaf")) {
