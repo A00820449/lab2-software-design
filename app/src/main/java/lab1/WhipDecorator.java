@@ -1,14 +1,13 @@
 package lab1;
 
-public class WhipDecorator implements Beverage {
-    Beverage wrapee;
+public class WhipDecorator extends BaseBevarageDecorator {
     public WhipDecorator(Beverage wrapee) {
-        this.wrapee = wrapee;
+        super(wrapee);
     }
 
     @Override
     public void prepare() {
         System.out.println("Añadiendo crema batida...");
-        wrapee.prepare();
+        super.prepare();
     }
 }

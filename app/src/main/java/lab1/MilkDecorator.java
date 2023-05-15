@@ -1,14 +1,13 @@
 package lab1;
 
-public class MilkDecorator implements Beverage {
-    Beverage wrapee;
+public class MilkDecorator extends BaseBevarageDecorator {
     public MilkDecorator(Beverage wrapee) {
-        this.wrapee = wrapee;
+        super(wrapee);
     }
 
     @Override
     public void prepare() {
         System.out.println("Añadiendo leche...");
-        wrapee.prepare();
+        super.prepare();
     }
 }

@@ -1,0 +1,27 @@
+@startuml class
+
+skin rose
+
+title Classes - Class Diagram
+
+interface Beverage {
+    +void prepare()
+}
+
+class DarkRoast implements Beverage {
+    +void prepare()
+}
+
+class Decaf implements Beverage {
+    +void prepare()
+}
+
+class Espresso implements Beverage {
+    +void prepare()
+}
+
+class HouseBlend implements Beverage {
+    +void prepare()
+}
+
+@enduml

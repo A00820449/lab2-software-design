@@ -1,14 +1,13 @@
 package lab1;
 
-public class MochaDecorator implements Beverage {
-    Beverage wrapee;
+public class MochaDecorator extends BaseBevarageDecorator {
     public MochaDecorator(Beverage wrapee) {
-        this.wrapee = wrapee;
+        super(wrapee);
     }
 
     @Override
     public void prepare() {
         System.out.println("Añadiendo café moca...");
-        wrapee.prepare();
+        super.prepare();
     }
 }

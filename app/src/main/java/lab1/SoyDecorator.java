@@ -1,14 +1,13 @@
 package lab1;
 
-public class SoyDecorator implements Beverage {
-    Beverage wrapee;
+public class SoyDecorator extends BaseBevarageDecorator {
     public SoyDecorator(Beverage wrapee) {
-        this.wrapee = wrapee;
+        super(wrapee);
     }
 
     @Override
     public void prepare() {
         System.out.println("Añadiendo soya...");
-        wrapee.prepare();
+        super.prepare();
     }
 }
