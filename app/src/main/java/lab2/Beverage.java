@@ -1,4 +1,4 @@
-package lab1;
+package lab2;
 
 public interface Beverage {
     public void prepare();

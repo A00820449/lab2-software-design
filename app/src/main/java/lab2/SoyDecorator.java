@@ -1,4 +1,4 @@
-package lab1;
+package lab2;
 
 public class SoyDecorator extends BaseBevarageDecorator {
     public SoyDecorator(Beverage wrapee) {

@@ -1,4 +1,4 @@
-package lab1;
+package lab2;
 
 public class WhipDecorator extends BaseBevarageDecorator {
     public WhipDecorator(Beverage wrapee) {
