@@ -9,7 +9,7 @@ public class App {
         String[] adds = null;
         Scanner s = new Scanner(System.in);
         
-        System.out.println("Escribre tu orden");
+        System.out.println("Escribe tu orden");
 
         option = s.nextLine().replaceAll("\\s+", "");
 
