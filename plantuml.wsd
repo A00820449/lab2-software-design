@@ -33,19 +33,23 @@ class BaseBevarageDecorator implements Beverage {
 BaseBevarageDecorator --o Beverage
 
 class MilkDecorator extends BaseBevarageDecorator {
-    ...
+    +MilkDecorator(Beverage wrapee)
+    +void prepare()
 }
 
 class SoyDecorator extends BaseBevarageDecorator {
-    ...
+    +SoyDecorator(Beverage wrapee)
+    +void prepare()
 }
 
 class MochaDecorator extends BaseBevarageDecorator {
-    ...
+    +MochaDecorator(Beverage wrapee)
+    +void prepare()
 }
 
 class WhipDecorator extends BaseBevarageDecorator {
-    ...
+    +WhipDecorator(Beverage wrapee)
+    +void prepare()
 }
 
 @enduml
