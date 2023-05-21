@@ -1,7 +1,7 @@
 package lab2;
 
 public class BaseBevarageDecorator implements Beverage {
-    Beverage wrapee;
+    private Beverage wrapee;
     public BaseBevarageDecorator(Beverage wrapee) {
         this.wrapee = wrapee;
     }
